@@ -8,7 +8,7 @@ int main ()
     House owner2 =House("yuheng",100);
     House owner3 =House("weiguang",100);
 
-    Subdivision s("asd",100);
+    Subdivision s("asd",3);
     // s =Subdivision("qqq",5);
     if (!s.add_house(owner1))
     {

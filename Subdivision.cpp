@@ -8,6 +8,7 @@ Subdivision::Subdivision()
 Subdivision::Subdivision(std::string subName, int size)
 {
     sub_size =size;
+    num_house =0;
     sub_name =subName;
     // array =new House [size];
 }
@@ -25,7 +26,7 @@ House *Subdivision:: get_houses()
 }
 bool Subdivision:: add_house(House new_house)
 {
-    if (num_house>=sub_size)
+    if (num_house<sub_size)
     {
         array[num_house] =new_house;
         num_house++;
